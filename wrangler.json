@@ -1,0 +1,30 @@
+{
+  "name": "winter-rice-beb9",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "winter-rice-beb9-d1",
+      "database_id": "9abe1536-ab04-496f-8675-859c776e91a8"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "winter-rice-beb9-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
